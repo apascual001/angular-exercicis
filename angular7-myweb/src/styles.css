@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+/* Images */
+img{
+	max-width: 100%;
+}
+/* Sections */
+.page-section  {
+	background-color: #f2f2f2;
+}
+/* Butttons */
+.btn { min-width: 160px; }
+.btn.white{
+	background-color: #fff;
+}
+[type=submit]{
+	border: 1px solid #54a9a3;
+}
+/* Hero area */
+.hero-area-bg{
+	background-image: url(/assets/img/hero-home.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 0.8em;
+	padding: 10rem 0 2rem;
+}
+	.section-title{
+		font-size: 1.6rem;
+	}
+
+@media (min-width: 768px) {
+	.hero-area-bg{
+		font-size: 1em;
+		padding: 10rem 0;
+	}
+	.section-title{
+		font-size: 4rem;
+	}
+}
+
+/* Themes section */
+.themes-buttons.container {
+    padding: 2em 0;
+}
+.themes-buttons .btn {
+    margin-bottom: 0.8em;
+}
+
+.theme-item {  
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.theme-item:hover {  
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+}
+.theme-title {
+    color: #54a9a3;
+    font-size: 1rem;
+}
+
