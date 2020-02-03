@@ -1,0 +1,49 @@
+<section class="page-section">
+
+    <div class="posts">
+        <div class="row justify-content-center">
+            <div class="text-center">
+
+                <h1>Posts</h1>
+                <ul>
+                    <li *ngFor="let post of posts">
+                        <a [routerLink]="[post.slug]">
+                            <img *ngIf="post.featured_img_url" [src]="post.featured_img_url">
+                            {{post.title.rendered}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="themes-buttons container">
+        <div class="row justify-content-center">
+            <div class="text-center">
+                <a class="filter btn white">Portfolio</a>
+                <a class="filter btn white">Tienda</a>
+                <a class="filter btn white">Blog</a>
+            </div>
+        </div>	
+    </div>
+    <div class="themes-grid container py-4">
+        <div class="row row justify-content-center family-sans text-uppercase text-center">
+            <div class="theme-item col-12 col-sm-6 col-md-4 py-3">
+                <img src="/assets/img/theme-1.jpg" alt="Theme 1" />
+                <h5 class="theme-title pt-2 indigo">Theme 1</h5>  
+            </div> 
+            <div class="theme-item col-12 col-sm-6 col-md-4 py-3">
+                <img src="/assets/img/theme-2.jpg" alt="Theme 2" />
+                <h5 class="theme-title pt-2">Theme 2</h5>  
+            </div> 
+            <div class="theme-item col-12 col-sm-6 col-md-4 py-3">
+                <img src="/assets/img/theme-3.jpg" alt="Theme 3" />
+                <h5 class="theme-title pt-2">Theme 3</h5>  
+            </div>             	
+        </div>
+    </div>
+    
+</section>
+
+
+

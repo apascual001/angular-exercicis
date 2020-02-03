@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { WpService } from './wp.service';
+import { WprestNoAuthService } from './wprest-no-auth.service';
 
-describe('WpService', () => {
+describe('WprestNoAuthService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: WpService = TestBed.get(WpService);
+    const service: WprestNoAuthService = TestBed.get(WprestNoAuthService);
     expect(service).toBeTruthy();
   });
 });
